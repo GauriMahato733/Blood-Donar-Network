@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donor Network</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      
+      <div class="logo">
+        <span class="logo-icon">🩸</span>
+        <h2>Redpluse</h2>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-donor.html">Find Donor</a></li>
+        <li><a href="become-donor.html">Become Donor</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-btn">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-left">
+      <h1>Donate Blood,<br> Save Lives</h1>
+
+      <p>
+        Join our blood donor network and help people in emergency situations.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="find-donor.html" class="hero-btn red-btn">Find Donor</a>
+
+        <a href="become-donor.html" class="hero-btn white-btn">
+          Become Donor
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=1000&auto=format&fit=crop" alt="Blood Donation">
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+  <!-- LIVE IMPACT COUNTER SECTION -->
+
+<section class="impact-section">
+
+  <div class="impact-heading">
+    <h2>Our Life Saving Impact</h2>
+    <p>Together we are building a strong blood donor community.</p>
+  </div>
+
+  <div class="impact-container">
+
+    <!-- CARD 1 -->
+
+    <div class="impact-card">
+
+      <div class="icon">🩸</div>
+
+      <h3 class="counter" data-target="5000">50+</h3>
+
+      <p>Registered Donors</p>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="impact-card">
+
+      <div class="icon">❤️</div>
+
+      <h3 class="counter" data-target="1200">500+</h3>
+
+      <p>Lives Saved</p>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="impact-card">
+
+      <div class="icon">🚑</div>
+
+      <h3>24/7</h3>
+
+      <p>Emergency Support</p>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="impact-card">
+
+      <div class="icon">🌍</div>
+
+      <h3 class="counter" data-target="100">100+</h3>
+
+      <p>Cities Connected</p>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- SEARCH BLOOD DONOR SECTION -->
+
+<section class="search-section">
+
+  <div class="search-heading">
+    <h2>Find Blood Donors</h2>
+    <p>Search nearby blood donors instantly during emergencies.</p>
+  </div>
+
+  <!-- SEARCH BOX -->
+
+  <div class="search-box">
+
+    <!-- BLOOD GROUP -->
+
+    <div class="input-box">
+
+      <label>Select Blood Group</label>
+
+      <select id="bloodGroup">
+
+        <option value="">Choose Blood Group</option>
+
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+
+      </select>
+
+    </div>
+
+    <!-- LOCATION -->
+
+    <div class="input-box">
+
+      <label>Select Location</label>
+
+      <input type="text" id="location" placeholder="Enter your city">
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <button class="search-btn" id="searchBtn">
+      Search Donor
+    </button>
+
+  </div>
+
+  <!-- DONOR RESULT CARDS -->
+
+  <div class="donor-container" id="donorContainer">
+
+    <!-- CARD 1 -->
+
+    <div class="donor-card">
+
+      <div class="blood-tag">A+</div>
+
+      <h3>Rahul Sharma</h3>
+
+      <p>Bhopal, Madhya Pradesh</p>
+
+      <span class="status available">
+        Available
+      </span>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="donor-card">
+
+      <div class="blood-tag">O+</div>
+
+      <h3>Aman Verma</h3>
+
+      <p>Indore, Madhya Pradesh</p>
+
+      <span class="status unavailable">
+        Busy
+      </span>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="donor-card">
+
+      <div class="blood-tag">B+</div>
+
+      <h3>Priya Singh</h3>
+
+      <p>Delhi, India</p>
+
+      <span class="status available">
+        Available
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- HOW IT WORKS SECTION -->
+
+<section class="how-section">
+
+  <div class="section-heading">
+
+    <h2>How It Works</h2>
+
+    <p>
+      Quick and simple process to connect blood donors with patients.
+    </p>
+
+  </div>
+
+  <!-- TIMELINE -->
+
+  <div class="timeline">
+
+    <!-- STEP 1 -->
+
+    <div class="step-card">
+
+      <div class="step-icon">
+        📝
+      </div>
+
+      <div class="step-number">
+        01
+      </div>
+
+      <h3>Register as Donor</h3>
+
+      <p>
+        Create your profile and register yourself as a blood donor.
+      </p>
+
+    </div>
+
+    <!-- STEP 2 -->
+
+    <div class="step-card">
+
+      <div class="step-icon">
+        🔍
+      </div>
+
+      <div class="step-number">
+        02
+      </div>
+
+      <h3>Search by Location</h3>
+
+      <p>
+        Find nearby donors using blood group and city filters.
+      </p>
+
+    </div>
+
+    <!-- STEP 3 -->
+
+    <div class="step-card">
+
+      <div class="step-icon">
+        🚑
+      </div>
+
+      <div class="step-number">
+        03
+      </div>
+
+      <h3>Connect Instantly</h3>
+
+      <p>
+        Contact donors immediately during emergency situations.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- EMERGENCY BLOOD REQUEST SECTION -->
+
+<section class="emergency-section">
+
+  <div class="emergency-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="emergency-content">
+
+      <span class="emergency-tag">
+        🚨 Emergency Help
+      </span>
+
+      <h2>
+        Need Blood Urgently?
+      </h2>
+
+      <p>
+        Connect with nearby blood donors instantly during emergencies.
+        Submit your request and get quick support from our network.
+      </p>
+
+      <!-- EMERGENCY BUTTON -->
+
+      <button class="emergency-btn">
+        Call Emergency Support
+      </button>
+
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+
+    <div class="request-form">
+
+      <h3>Request Blood</h3>
+
+      <form id="bloodForm">
+
+        <div class="input-box">
+
+          <input type="text" placeholder="Patient Name" required>
+
+        </div>
+
+        <div class="input-box">
+
+          <select required>
+
+            <option value="">
+              Select Blood Group
+            </option>
+
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+
+          </select>
+
+        </div>
+
+        <div class="input-box">
+
+          <input type="text" placeholder="Hospital / City" required>
+
+        </div>
+
+        <div class="input-box">
+
+          <input type="tel" placeholder="Contact Number" required>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Send Emergency Request
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- WHY CHOOSE US SECTION -->
+
+<section class="choose-section">
+
+  <div class="section-heading">
+
+    <h2>Why Choose Us</h2>
+
+    <p>
+      We provide a fast, secure, and reliable blood donor network system.
+    </p>
+
+  </div>
+
+  <!-- FEATURE CARDS -->
+
+  <div class="choose-container">
+
+    <!-- CARD 1 -->
+
+    <div class="choose-card">
+
+      <div class="icon">
+        ⚡
+      </div>
+
+      <h3>Fast Response</h3>
+
+      <p>
+        Quickly connect with blood donors during emergencies.
+      </p>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="choose-card">
+
+      <div class="icon">
+        ✅
+      </div>
+
+      <h3>Verified Donors</h3>
+
+      <p>
+        All donor profiles are verified for trust and safety.
+      </p>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="choose-card">
+
+      <div class="icon">
+        📍
+      </div>
+
+      <h3>Real-time Location</h3>
+
+      <p>
+        Find nearby blood donors using location-based search.
+      </p>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="choose-card">
+
+      <div class="icon">
+        🔒
+      </div>
+
+      <h3>Secure Information</h3>
+
+      <p>
+        Your personal details remain private and protected.
+      </p>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="choose-card">
+
+      <div class="icon">
+        🕐
+      </div>
+
+      <h3>24/7 Support</h3>
+
+      <p>
+        Emergency help and donor support available anytime.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- TESTIMONIAL SECTION -->
+
+<section class="testimonial-section">
+
+  <div class="section-heading">
+
+    <h2>What People Say</h2>
+
+    <p>
+      Trusted by donors and patients across the country.
+    </p>
+
+  </div>
+
+  <!-- SLIDER -->
+
+  <div class="testimonial-slider">
+
+    <div class="testimonial-track">
+
+      <!-- CARD 1 -->
+
+      <div class="testimonial-card">
+
+        <div class="quote">
+          “
+        </div>
+
+        <p class="review">
+          This platform helped me find blood donors within minutes during an emergency.
+          Truly life saving service.
+        </p>
+
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="user-info">
+
+          <div class="user-image">
+            👨
+          </div>
+
+          <div>
+            <h3>Rahul Sharma</h3>
+            <span>Patient Family</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="testimonial-card">
+
+        <div class="quote">
+          “
+        </div>
+
+        <p class="review">
+          Donating blood became very easy through this network.
+          The process is smooth and fast.
+        </p>
+
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="user-info">
+
+          <div class="user-image">
+            👩
+          </div>
+
+          <div>
+            <h3>Priya Verma</h3>
+            <span>Blood Donor</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="testimonial-card">
+
+        <div class="quote">
+          “
+        </div>
+
+        <p class="review">
+          I quickly found O+ blood in my city.
+          Very responsive donor support team.
+        </p>
+
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="user-info">
+
+          <div class="user-image">
+            👨
+          </div>
+
+          <div>
+            <h3>Aman Singh</h3>
+            <span>Emergency Request</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+
+      <div class="testimonial-card">
+
+        <div class="quote">
+          “
+        </div>
+
+        <p class="review">
+          Verified donors and secure information make this platform highly trustworthy.
+        </p>
+
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="user-info">
+
+          <div class="user-image">
+            👩
+          </div>
+
+          <div>
+            <h3>Neha Patel</h3>
+            <span>Volunteer</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- FOOTER SECTION -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO & ABOUT -->
+
+    <div class="footer-box">
+
+      <h2 class="footer-logo">
+        Blood<span>Connect</span>
+      </h2>
+
+      <p>
+        Connecting blood donors with patients instantly during emergencies.
+        Together we can save lives.
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Find Donor</a></li>
+        <li><a href="#">Become Donor</a></li>
+        <li><a href="#">Emergency Help</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- CONTACT INFO -->
+
+    <div class="footer-box">
+
+      <h3>Contact Info</h3>
+
+      <p>📍Bhilai,Chhatisgar</p>
+
+      <p>📞 +91 82929678346</p>
+
+      <p>✉ rajankit2380@gmail.com</p>
+
+      <!-- SOCIAL ICONS -->
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📷</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+    <!-- SUBSCRIBE -->
+
+    <div class="footer-box">
+
+      <h3>Email Subscription</h3>
+
+      <p>
+        Subscribe to get blood donation updates and emergency alerts.
+      </p>
+
+      <form id="subscribeForm">
+
+        <input 
+          type="email" 
+          id="emailInput"
+          placeholder="Enter your email"
+          required
+        >
+
+        <button type="submit">
+          Subscribe
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 BloodConnect. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+</body>
+</html>
